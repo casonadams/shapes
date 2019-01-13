@@ -1,4 +1,4 @@
-# simpleshapes
+# shapes
 
 This is a simple package to show how to use interfaces in go and packages.
 
@@ -13,7 +13,7 @@ This is a simple package to show how to use interfaces in go and packages.
 # Refer to https://golang.github.io/dep/docs/Gopkg.toml.html
 # for detailed Gopkg.toml documentation.
 
-required = ["github.com/casonadams/simpleshapes"]
+required = ["github.com/casonadams/shapes"]
 ```
 
 ### pulling down package with dep
@@ -28,15 +28,15 @@ package main
 import (
 	"fmt"
 
-	simpleshape "github.com/casonadams/simpleshapes"
+	shape "github.com/casonadams/shapes"
 )
 
 func main() {
-	r := simpleshape.NewRectangle(10, 5)
-	t := simpleshape.NewTriangle(2, 4)
+	r := shape.NewRectangle(10, 5)
+	t := shape.NewTriangle(2, 4)
 
-	fmt.Println("Area of Rectangle: ", simpleshape.ShapeArea(r))
-	fmt.Println("Area of Triangle: ", simpleshape.ShapeArea(t))
+	fmt.Println("Area of Rectangle: ", shape.ShapeArea(r))
+	fmt.Println("Area of Triangle: ", shape.ShapeArea(t))
 
 }
 ```
