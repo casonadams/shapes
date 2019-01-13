@@ -41,12 +41,12 @@ func main() {
 }
 ```
 
-## Tests
+## Pacakge Tests
 ```bash
-go test
+go test -timeout 30s github.com/casonadams/shapes
 ```
 
-### Benchmark tests
+### Package Benchmark tests
 ```bash
-go test -benchmem
+go test -benchmem -run=^$ github.com/casonadams/shapes -bench .
 ```

@@ -14,8 +14,14 @@ func TestTriangleArea(t *testing.T) {
 	assert.Equal(t, actual_result, expected_result)
 }
 
-func BenchmarkTriangleArea(b *testing.B) {
+func BenchmarkTriangle(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		shape.NewTriangle(3, 6)
+	}
+}
+
+func BenchmarkTriangleArea(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		shape.NewTriangle(3, 6).Area()
 	}
 }

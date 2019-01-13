@@ -14,8 +14,14 @@ func TestRectangleArea(t *testing.T) {
 	assert.Equal(t, actual_result, expected_result)
 }
 
-func BenchmarkRectangleArea(b *testing.B) {
+func BenchmarkRectangle(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		shape.NewRectangle(9, 6)
+	}
+}
+
+func BenchmarkRectangleArea(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		shape.NewRectangle(9, 6).Area()
 	}
 }
