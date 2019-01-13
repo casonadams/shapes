@@ -2,7 +2,7 @@
 
 This is a simple package to show how to use interfaces in go and packages.
 
-## requirements
+## Requirements
 
 ### dep
 
@@ -19,13 +19,13 @@ This is a simple package to show how to use interfaces in go and packages.
 required = ["github.com/casonadams/shapes"]
 ```
 
-### pulling down package with dep
+### pull down package with dep
 
 ```bash
 dep ensure
 ```
 
-### usage example
+## Example
 
 ```go
 package main
@@ -46,13 +46,15 @@ func main() {
 }
 ```
 
-## Pacakge Tests
+## Tests
+
+### Package Tests
 
 ```bash
 go test -timeout 30s github.com/casonadams/shapes
 ```
 
-### Package Benchmark tests
+### Package Benchmark Tests
 
 ```bash
 go test -benchmem -run=^$ github.com/casonadams/shapes -bench .
