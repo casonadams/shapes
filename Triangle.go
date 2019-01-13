@@ -1,4 +1,4 @@
-package simpleshape
+package shape
 
 type Triangle struct {
 	base   float64

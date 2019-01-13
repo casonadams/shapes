@@ -1,4 +1,4 @@
-package simpleshape
+package shape
 
 type Rectangle struct {
 	width  float64
