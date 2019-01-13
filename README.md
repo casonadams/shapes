@@ -40,3 +40,13 @@ func main() {
 
 }
 ```
+
+## Tests
+```bash
+go test
+```
+
+### Benchmark tests
+```bash
+go test -benchmem
+```
