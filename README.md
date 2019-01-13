@@ -47,7 +47,7 @@ func main() {
 go test -timeout 30s github.com/casonadams/shapes
 ```
 
-### Package Benchmark tests
+### Package Benchmark Tests
 ```bash
 go test -benchmem -run=^$ github.com/casonadams/shapes -bench .
 ```
