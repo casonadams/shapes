@@ -41,7 +41,8 @@ func main() {
 }
 ```
 
-## Pacakge Tests
+## Tests
+### Package Tests
 ```bash
 go test -timeout 30s github.com/casonadams/shapes
 ```
