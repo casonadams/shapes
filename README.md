@@ -6,7 +6,7 @@ This is a simple package to show how to use interfaces in go and packages.
 ### dep
 [Install](https://golang.github.io/dep/docs/installation.html)
 
-### Gopak.toml
+### Gopkg.toml
 ```toml
 # Gopkg.toml example
 #
