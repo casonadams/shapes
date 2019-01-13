@@ -2,7 +2,7 @@
 
 This is a simple package to show how to use interfaces in go and packages.
 
-## requirements
+## Requirements
 ### dep
 [Install](https://golang.github.io/dep/docs/installation.html)
 
@@ -16,12 +16,12 @@ This is a simple package to show how to use interfaces in go and packages.
 required = ["github.com/casonadams/shapes"]
 ```
 
-### pulling down package with dep
+### pull down package with dep
 ```bash
 dep ensure
 ```
 
-### usage example
+## Example
 ```go
 package main
 
